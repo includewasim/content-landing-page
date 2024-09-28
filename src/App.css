@@ -1,0 +1,37 @@
+.roadmap-section {
+    position: relative;
+    overflow: hidden;
+    /* Ensure the sparkle effect is limited to this section */
+}
+
+.sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: conic-gradient(from 180deg, #ec4899, #6366f1);
+    /* Gradient from pink to indigo */
+    border-radius: 50%;
+    pointer-events: none;
+    /* Prevent blocking any interactions */
+    animation: sparkle 1s ease-out;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    /* Glow effect */
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
