@@ -15,8 +15,12 @@ Overview
 This landing page was inspired by a YouTube tutorial, where I learned key techniques in frontend development. I added my own creative touch to enhance the user experience and overall aesthetic.
 
 Features
+
 Responsive Design: The layout adapts seamlessly to various screen sizes, ensuring a great user experience on both desktop and mobile devices.
+
 Interactive Elements: Engaging components that enhance user interaction and provide smooth navigation.
+
 Professional Aesthetic: A clean and modern look that reflects my design sensibilities.
+
 Feel free to explore the code, and I welcome any feedback or suggestions!
 
