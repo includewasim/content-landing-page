@@ -23,4 +23,7 @@ Interactive Elements: Engaging components that enhance user interaction and prov
 Professional Aesthetic: A clean and modern look that reflects my design sensibilities.
 
 Feel free to explore the code, and I welcome any feedback or suggestions!
+DEMO:
+
+https://content-landing.netlify.app/
 
