@@ -5,11 +5,12 @@ import 'aos/dist/aos.css';
 const Testimonials = () => {
     useEffect(() => {
         AOS.init({ duration: 1000 });
+        AOS.refresh();
     }, []);
     return (
         <section className='flex items-center p-10 justify-center flex-col '>
             <TagLine>Testimonials</TagLine>
-            <h2 className='text-3xl font-extrabold text-center mt-3 mb-8 '>What Creators are saying</h2>
+            <h2 className='text-3xl font-extrabold text-center mt-3 mb-8 bg-gradient-to-r from-black via-gray-600 to-gray-400 bg-clip-text text-transparent'>What Creators are saying</h2>
             <div className='grid gap-8 grid-cols-1 md:grid-cols-3 items-center max-w-screen-xl'>
                 <div className='grid gap-4'>
                     <div className=' testimonial-card border rounded-lg bg-white/20 backdrop-blur-lg p-6 ' data-aos="fade-down">

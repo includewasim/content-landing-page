@@ -4,7 +4,7 @@ const Features = () => {
     return (
         <section id='features' className="flex items-center p-10 justify-center flex-col">
             <TagLine>Features</TagLine>
-            <h2 className='font-extrabold text-center md: text-3xl mb-4 md:mb-8 pt-3'>AI-Powered Content Generator</h2>
+            <h2 className='font-extrabold text-center md: text-3xl mb-4 md:mb-8 pt-3 bg-gradient-to-r from-black via-gray-600 to-gray-400 bg-clip-text text-transparent'>AI-Powered Content Generator</h2>
             <div className='mt-10 grid items-center grid-cols-1 gap-3 md:grid-cols-3 max-w-screen-xl '>
                 {
                     features.map((feature, index) => (

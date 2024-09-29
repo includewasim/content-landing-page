@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Tag from './Tag'
 import demo from '../assets/demo.png'
 import { ChevronRight } from 'lucide-react'
 import 'animate.css';
 
 const Hero = () => {
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            const sparkle = document.createElement("div");
+            sparkle.className = "sparkle";
+            sparkle.style.left = `${e.pageX}px`;
+            sparkle.style.top = `${e.pageY}px`;
+            document.body.appendChild(sparkle);
+
+            setTimeout(() => {
+                sparkle.remove();
+            }, 1000); // Particle removal after 1 second
+        };
+
+        const section = document.querySelector(".hero");
+        section.addEventListener("mousemove", handleMouseMove);
+
+        return () => {
+            section.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []);
     return (
         <section id="hero" className='hero text-center mt-32 flex flex-col animate__animated animate__fadeIn'>
             <Tag>
@@ -24,7 +44,7 @@ const Hero = () => {
                 Transform your business with our powerful SaaS solutions—easy integration, scalable features, and seamless performance.
             </h2>
             <div className='mt-5 mx-auto flex max-w-fit space-x-4'>
-                <a href="get-started" className='rounded-full mx-auto max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-black bg-black text-white hover:ring-gray-400 hover:ring-2'>
+                <a href="get-started" className='rounded-full mx-auto max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-indigo-600 bg-indigo-500 text-white hover:ring-indigo-700 hover:ring-2'>
                     Get Started
                 </a>
                 <a href="features" className='rounded-full mx-auto max-w-fit border px-5 py-2 text-sm font-medium shadow-sm border-black bg-white text-black hover:ring-gray-400 hover:ring-2'>

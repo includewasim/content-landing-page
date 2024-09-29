@@ -35,3 +35,17 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
+
+@keyframes growLine {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+.animate-growLine {
+    animation: growLine 0.8s ease-in-out forwards;
+}

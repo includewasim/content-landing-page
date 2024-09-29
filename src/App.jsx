@@ -17,7 +17,7 @@ function App() {
 
       <div className='w-screen min-h-screen fixed z-0 flex justify-center px-6 py-40 pointer-events-none'>
 
-        <div className='absolute inset-0 bg-[url("grid.svg")] opacity-25'></div>
+        <div className='absolute inset-0 bg-[url("/grid.svg")] opacity-25'></div>
 
         <img src="/mesh.svg" alt="mesh background" className='absolute inset-0 bottom-1 h-[600px] z-10 opacity-15' />
 
